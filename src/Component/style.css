@@ -1,0 +1,422 @@
+/* common css */
+section {
+  font-family: "Magistral", sans-serif;
+}
+
+.fs-18 {
+  font-size: 22px;
+}
+
+.green {
+  color: #9cfc00;
+}
+.greenish {
+  color: #37ff8a;
+}
+
+.yellow {
+  color: #ffcd0c;
+}
+
+.blue-green {
+  color: #47dca5;
+}
+
+.blue {
+  color: #00cbf8;
+}
+
+.ls-8 {
+  letter-spacing: 8px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.bg-green {
+  background-color: #142114;
+}
+
+.shadow-green {
+  box-shadow: 0 0 40px 20px #012609;
+}
+
+.shadow-light-green {
+  box-shadow: 0 0 40px 15px #011906;
+}
+
+.shadow-violet {
+  box-shadow: 0 4px 15px -4px #b075ff9e;
+}
+
+.w-85 {
+  width: 55%;
+}
+
+.w-55 {
+  width: 53%;
+}
+
+.divider {
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    #ffffff,
+    rgba(0, 0, 0, 0)
+  );
+  margin: 0 5px 40px 5px;
+}
+.col-6:not(:last-child) .divider {
+  display: block;
+}
+
+.img-fluid {
+  width: 30%;
+}
+
+.flare {
+  position: absolute;
+  bottom: -1px;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #ffffff,
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 50%;
+  animation: flare-animation 70s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes flare-animation {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  7.14% {
+    /* 5 seconds of 70 seconds is approximately 7.14% */
+    left: 95%;
+    opacity: 1;
+  }
+  7.15% {
+    opacity: 0; /* Disappear */
+  }
+  100% {
+    opacity: 0; /* Remain hidden */
+  }
+}
+
+.flare2 {
+  position: absolute;
+  bottom: -1px;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    #ffffff,
+    rgba(0, 0, 0, 0)
+  );
+  border-radius: 50%;
+  animation: flare-animation2 70s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes flare-animation2 {
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+  7.14% {
+    /* 5 seconds of 70 seconds is approximately 7.14% */
+    right: 95%;
+    opacity: 1;
+  }
+  7.15% {
+    opacity: 0; /* Disappear */
+  }
+  100% {
+    opacity: 0; /* Remain hidden */
+  }
+}
+.flare3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255);
+  border-radius: 50%;
+  animation: flare-animation3 70s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes flare-animation3 {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  7.14% {
+    /* 5 seconds of 70 seconds is approximately 7.14% */
+    left: 100%;
+    opacity: 1;
+  }
+  7.15% {
+    opacity: 0; /* Disappear */
+  }
+  100% {
+    opacity: 0; /* Remain hidden */
+  }
+}
+
+.flare4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255);
+  border-radius: 50%;
+  animation: flare-animation4 70s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes flare-animation4 {
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+  7.14% {
+    /* 5 seconds of 70 seconds is approximately 7.14% */
+    right: 100%;
+    opacity: 1;
+  }
+  7.15% {
+    opacity: 0; /* Disappear */
+  }
+  100% {
+    opacity: 0; /* Remain hidden */
+  }
+}
+
+.flare5 {
+  position: absolute;
+  bottom: -2px;
+  width: 3px;
+  height: 2px;
+  background: rgb(255, 255, 255, 0.7);
+  box-shadow: 0 0 5px 1px rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: flare-animation5 70s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes flare-animation5 {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+  7.14% {
+    /* 5 seconds of 70 seconds is approximately 7.14% */
+    left: 87%;
+    opacity: 1;
+  }
+  7.15% {
+    opacity: 0; /* Disappear */
+  }
+  100% {
+    opacity: 0; /* Remain hidden */
+  }
+}
+
+.flare6 {
+  position: absolute;
+  bottom: 0;
+  width: 3px;
+  height: 2px;
+  background: rgb(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px 1px rgb(255, 255, 255);
+  border-radius: 50%;
+  animation: flare-animation6 70s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes flare-animation6 {
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+  7.14% {
+    /* 5 seconds of 70 seconds is approximately 7.14% */
+    right: 87%;
+    opacity: 1;
+  }
+  7.15% {
+    opacity: 0; /* Disappear */
+  }
+  100% {
+    opacity: 0; /* Remain hidden */
+  }
+}
+
+.soft-skills-wrapper {
+  position: relative;
+  width: 85%;
+  z-index: 1;
+}
+
+.soft-skills-wrapper1 {
+  position: relative;
+  left: 150px;
+  width: 85%;
+  z-index: 1;
+}
+
+.soft-skills {
+  position: relative;
+  width: 100%;
+  padding: 15px 100px 15px 15px;
+  z-index: 1;
+}
+
+.neuroda {
+  position: absolute;
+  width: 21%;
+  right: 75px;
+  z-index: 2;
+}
+
+.soft-skills1 {
+  position: relative;
+  width: 100%;
+  padding: 15px 15px 15px 100px;
+  z-index: 1;
+}
+
+.neuroda1 {
+  position: absolute;
+  width: 21%;
+  transform: scale(-1, 1);
+  z-index: 2;
+}
+
+.CircularProgressbar {
+  overflow: inherit;
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.custom-loader h6 {
+  padding: 55px 25px;
+  word-wrap: break-word;
+}
+
+.custom-loader-wrapper {
+  text-align: center;
+}
+
+.custom-loader-wrapper p {
+  max-width: 130px;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+@media only screen and (min-width: 430px) and (max-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+  .fs-18 {
+    font-size: 18px;
+  }
+  .neuroda {
+    right: 55px;
+  }
+
+  .w-85 {
+    width: 135%;
+  }
+
+  .w-55 {
+    width: 100%;
+  }
+
+  .soft-skills {
+    padding: 15px 70px 15px 15px;
+  }
+
+  .soft-skills-wrapper1 {
+    left: 90px;
+  }
+
+  .soft-skills1 {
+    padding: 15px 15px 15px 70px;
+  }
+
+  .custom-loader {
+    width: 100px;
+    height: 100px;
+  }
+
+  .custom-loader h6 {
+    padding: 40px 10px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .w-85,
+  .w-55 {
+    width: 100%;
+  }
+
+  .fs-sm-12 {
+    font-size: 12px;
+  }
+  .ls-8 {
+    letter-spacing: 5px;
+  }
+  .fs-18 {
+    font-size: 16px;
+  }
+  .neuroda {
+    right: 20px;
+  }
+  .soft-skills {
+    padding: 15px 15px 15px 15px;
+  }
+  .soft-skills-wrapper {
+    width: 100%;
+  }
+
+  .soft-skills-wrapper1 {
+    width: 100%;
+    left: 0px;
+  }
+
+  .fs-sm-20 {
+    font-size: 20px;
+  }
+  .soft-skills1 {
+    padding: 15px 15px 15px 15px;
+  }
+  .img-fluid {
+    width: 55%;
+  }
+  .CircularProgressbar {
+    width: 50%;
+  }
+}
+
+.circular-progress-capable .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #ffcd0c);
+}
+
+.circular-progress-impressive .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #00cbf8);
+}
+
+.circular-progress-exceptional .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #47dca5);
+}
