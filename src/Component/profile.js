@@ -41,7 +41,7 @@ export default function Profile() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/wip");
+        const response = await axios.get("https://app.xbsl.app/wip");
         setWipData(response.data);
       } catch (error) {
         console.log(error.message);
@@ -363,7 +363,9 @@ export default function Profile() {
             </div>
 
             <div className="mb-5">
-              <h2 className="greenish  m-0 ">Innovating with existing ideas</h2>
+              <h2 className="greenish  m-lg-0 mb-3 ">
+                Innovating with existing ideas
+              </h2>
 
               <div className="d-flex flex-column-reverse flex-md-row justify-content-lg-between gap-md-3 gap-lg-0 align-items-center ">
                 <div className="d-md-flex pt-md-5 justify-content-between align-items-center w-85">
@@ -489,70 +491,6 @@ export default function Profile() {
                   )}
                 </div>
               ))}
-
-            {/* <div className="d-flex align-items-lg-center mb-5 ">
-              <div className="neuroda1 d-none d-md-block">
-                <img src={neuroda} alt="neuroda" width="100%" />
-              </div>
-              <div className="soft-skills-wrapper">
-                <div className="soft-skills1 border border-1 border-secondary rounded shadow-violet">
-                  <h2 className="greenish m-0 fs-sm-20 d-none d-md-block">
-                    Key workplace soft-skills competencies of the individual
-                  </h2>
-
-                  <div className="d-md-none d-block">
-                    <div className="d-flex align-items-center justify-content-between">
-                      <h2 className="greenish m-0 fs-sm-20 ">
-                        Key workplace soft-skills competencies of the individual
-                      </h2>
-                      <img src={neuroda} alt="neuroda" width="30%" />
-                    </div>
-                  </div>
-
-                  <ul className="py-4 px-lg-5 px-md-4 ps-3 mb-0">
-                    {item.analysis.slice(3, 6).map((a, index) => (
-                      <li className="mb-0 fs-18" key={index}>
-                        {a}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="flare3"></div>
-                  <div className="flare4"></div>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="d-md-flex align-items-lg-center mb-5">
-              <div className="soft-skills-wrapper">
-                <div className="soft-skills border border-1 border-secondary rounded shadow-violet">
-                  <h2 className="greenish m-0 fs-sm-20 d-none d-md-block">
-                    Key traits exhibited at the workplace
-                  </h2>
-
-                  <div className="d-md-none d-block">
-                    <div className="d-flex align-items-center justify-content-between">
-                      <h2 className="greenish m-0 fs-sm-20 ">
-                        Key traits exhibited at the workplace
-                      </h2>
-                      <img src={neuroda} alt="neuroda" width="30%" />
-                    </div>
-                  </div>
-
-                  <ul className="py-4 px-lg-5 px-md-4 ps-3 mb-0">
-                    {item.analysis.slice(6, 10).map((a, index) => (
-                      <li className="mb-0 fs-18" key={index}>
-                        {a}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="flare3"></div>
-                  <div className="flare4"></div>
-                </div>
-              </div>
-              <div className="neuroda d-none d-md-block">
-                <img src={neuroda} alt="neuroda" width="100%" />
-              </div>
-            </div> */}
 
             <div className="d-flex justify-content-between align-items-center flex-column flex-md-row mb-5 ">
               <div className="col-lg-3 col-md-3 col-12 p-0 mt-4 mt-md-0  mb-3 mb-md-5 text-center text-md-start">

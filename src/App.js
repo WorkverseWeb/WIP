@@ -12,7 +12,6 @@ function App() {
       <div className="Profile">
         <Profile />
       </div>
-      <p>hello</p>
     </div>
   );
 }
