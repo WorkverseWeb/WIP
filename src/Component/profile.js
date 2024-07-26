@@ -41,7 +41,7 @@ export default function Profile() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://app.xbsl.app/wip");
+        const response = await axios.get("https://app.xbsl.app/api/user/wip");
         setWipData(response.data);
       } catch (error) {
         console.log(error.message);

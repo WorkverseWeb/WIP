@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Magistral";
-  src: url("./fonts/MAGISTRAL-NORMAL-FIN.TTF") format("truetype");
+  src: url("./fonts/MAGISTRAL-NORMAL-FIN.woff") format("woff");
 }
 
 .App {
