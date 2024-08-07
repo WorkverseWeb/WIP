@@ -7,6 +7,14 @@ section {
   font-size: 22px;
 }
 
+.max-w-100 {
+  max-width: 100%;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
 .green {
   color: #9cfc00;
 }
@@ -31,7 +39,7 @@ section {
 }
 
 .lh-20 {
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .bg-green {
@@ -67,9 +75,24 @@ section {
     #ffffff,
     rgba(0, 0, 0, 0)
   );
-  margin: 0 5px 40px 5px;
+  margin: 40px 5px;
 }
 .col-6:not(:last-child) .divider {
+  display: block;
+}
+
+.divider2 {
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    #ffffff,
+    rgba(0, 0, 0, 0)
+  );
+  margin: 40px 5px;
+}
+.col-6:not(:last-child) .divider2 {
   display: block;
 }
 
@@ -309,6 +332,26 @@ section {
   margin-bottom: 10px;
 }
 
+.skill {
+  width: 18%;
+}
+
+.skill .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #ffcd0c) !important;
+}
+
+.circular-progress-capable .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #ffcd0c);
+}
+
+.circular-progress-impressive .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #00cbf8);
+}
+
+.circular-progress-exceptional .CircularProgressbar-path {
+  filter: drop-shadow(0 0 5px #47dca5);
+}
+
 .custom-loader h6 {
   padding: 55px 25px;
   word-wrap: break-word;
@@ -324,7 +367,314 @@ section {
   word-wrap: break-word;
 }
 
-@media only screen and (min-width: 430px) and (max-width: 768px) {
+@media (3301px <= width <=4000px) {
+  .p-xxl-8 {
+    padding: 5rem !important;
+  }
+  .p-xxl-6 {
+    padding: 8rem !important;
+  }
+  .fs-1 {
+    font-size: 6rem !important;
+  }
+
+  .divider {
+    width: 4px;
+    height: 300px;
+    margin: 150px 5px;
+  }
+  .divider2 {
+    width: 4px;
+    height: 300px;
+    margin: 150px 5px;
+  }
+
+  .w-xxl-7 {
+    width: 18%;
+  }
+
+  .w-xxl-6 {
+    width: 35%;
+  }
+
+  .mb-xxl-6 {
+    margin-bottom: 7rem !important;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h4,
+  h2 {
+    font-size: 5rem;
+  }
+
+  .lh-20 {
+    line-height: 60px;
+  }
+
+  .fs-sm-12 {
+    font-size: 50px;
+  }
+
+  .fs-18 {
+    font-size: 65px;
+  }
+
+  .p-xxl-7 {
+    padding: 5.5rem !important;
+  }
+  .CircularProgressbar {
+    width: 100%;
+  }
+
+  .mt-xxl-6 {
+    margin-top: 6rem !important;
+  }
+
+  .mb-xxl-6 {
+    margin-bottom: 8rem !important;
+  }
+
+  .skill {
+    width: 11%;
+  }
+
+  .custom-loader-wrapper p {
+    max-width: 350px;
+    font-size: 50px;
+  }
+  .w-55,
+  .w-85 {
+    width: 50%;
+  }
+  .px-xxl-6 {
+    padding: 0 6rem !important;
+  }
+  .soft-skills {
+    padding: 45px 300px 45px 45px;
+  }
+  .soft-skills-wrapper {
+    width: 86%;
+  }
+  .neuroda {
+    width: 21%;
+    right: 160px;
+  }
+  .soft-skills1 {
+    padding: 45px 45px 45px 200px;
+  }
+  .soft-skills-wrapper1 {
+    left: 480px;
+  }
+}
+
+@media (2701px <= width <=3300px) {
+  .p-xxl-8 {
+    padding: 4rem !important;
+  }
+  .soft-skills1 {
+    padding: 45px 45px 45px 200px;
+  }
+  .soft-skills {
+    padding: 45px 300px 45px 45px;
+  }
+  .px-xxl-6 {
+    padding: 0 6rem !important;
+  }
+
+  .custom-loader-wrapper p {
+    max-width: 300px;
+    font-size: 40px;
+  }
+
+  .skill {
+    width: 11%;
+  }
+
+  .p-xxl-6 {
+    padding: 6rem !important;
+  }
+
+  .fs-1 {
+    font-size: 6rem !important;
+  }
+
+  .divider {
+    width: 4px;
+    height: 250px;
+    margin: 80px 5px;
+  }
+
+  .divider2 {
+    width: 6px;
+    height: 300px;
+    margin: 80px 5px;
+  }
+
+  .CircularProgressbar {
+    width: 100%;
+  }
+
+  .w-xxl-7 {
+    width: 20%;
+  }
+
+  .w-xxl-6 {
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h4,
+  h2 {
+    font-size: 5rem;
+  }
+
+  .lh-20 {
+    line-height: 60px;
+  }
+
+  .fs-sm-12 {
+    font-size: 60px;
+  }
+
+  .fs-18 {
+    font-size: 55px;
+  }
+  .p-xxl-7 {
+    padding: 3.5rem !important;
+  }
+
+  .mt-xxl-6 {
+    margin-top: 6rem !important;
+  }
+
+  .mb-xxl-6 {
+    margin-bottom: 6rem !important;
+  }
+
+  .soft-skills-wrapper1 {
+    left: 300px;
+  }
+  .soft-skills1 {
+    padding: 30px 30px 30px 200px;
+  }
+  .neuroda {
+    right: 150px;
+  }
+}
+
+@media (1800px <= width <=2700px) {
+  .custom-loader-wrapper p {
+    max-width: 300px;
+    font-size: 40px;
+  }
+  .skill {
+    width: 14%;
+  }
+  .mt-xxl-6 {
+    margin-top: 6rem !important;
+  }
+  .mb-xxl-6 {
+    margin-bottom: 6rem !important;
+  }
+  .p-xxl-6 {
+    padding: 5rem !important;
+  }
+  .fs-1 {
+    font-size: 5rem !important;
+  }
+  .divider {
+    width: 4px;
+    height: 200px;
+  }
+  .divider2 {
+    width: 4px;
+    height: 200px;
+    margin: 180px 5px;
+  }
+  .w-xxl-7 {
+    width: 30%;
+  }
+  .w-xxl-6 {
+    width: 40%;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h4,
+  h2 {
+    font-size: 4rem;
+  }
+  .lh-20 {
+    line-height: 50px;
+  }
+  .fs-sm-12 {
+    font-size: 50px;
+  }
+  .fs-18 {
+    font-size: 50px;
+  }
+  .soft-skills {
+    padding: 30px 200px 30px 30px;
+  }
+  .px-xxl-6 {
+    padding: 0 6rem !important;
+  }
+  .CircularProgressbar {
+    width: 90%;
+  }
+  .p-xxl-7 {
+    padding: 2.5rem !important;
+  }
+  .soft-skills-wrapper1 {
+    left: 300px;
+  }
+  .soft-skills1 {
+    padding: 30px 30px 30px 200px;
+  }
+  .neuroda {
+    right: 150px;
+  }
+}
+
+@media (769px <= width <= 1200px) {
+  .mt-xlg-1 {
+    margin-top: 0.5rem !important;
+  }
+
+  .px-lg-5 {
+    padding: 0 !important;
+  }
+
+  .w-85 {
+    width: 100%;
+  }
+
+  .w-55 {
+    width: 75%;
+  }
+  .soft-skills-wrapper1 {
+    left: 120px;
+  }
+
+  .padding-left {
+    padding: 15px 0px 15px 40px !important;
+  }
+
+  .fs-1 {
+    font-size: 2rem !important;
+  }
+  .skill {
+    width: 22%;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 768px) {
   .w-md-50 {
     width: 50%;
   }
@@ -363,12 +713,85 @@ section {
   .custom-loader h6 {
     padding: 40px 10px;
   }
+
+  .skill {
+    width: 22%;
+  }
+
+  .fs-1 {
+    font-size: 2rem !important;
+  }
+
+  .spread1 {
+    top: 700px;
+    left: 400px;
+  }
+
+  .spread2 {
+    top: 1100px;
+    left: -300px;
+  }
+
+  .spread3 {
+    top: 1900px;
+    left: -300px;
+  }
+
+  .spread4 {
+    top: 3400px;
+    left: 250px;
+  }
+
+  .spread5 {
+    top: 4000px;
+    left: -500px;
+  }
+
+  @keyframes flare-animation {
+    0% {
+      left: 0%;
+      opacity: 1;
+    }
+    7.14% {
+      /* 5 seconds of 70 seconds is approximately 7.14% */
+      left: 85%;
+      opacity: 1;
+    }
+    7.15% {
+      opacity: 0; /* Disappear */
+    }
+    100% {
+      opacity: 0; /* Remain hidden */
+    }
+  }
+
+  @keyframes flare-animation2 {
+    0% {
+      right: 0%;
+      opacity: 1;
+    }
+    7.14% {
+      /* 5 seconds of 70 seconds is approximately 7.14% */
+      right: 85%;
+      opacity: 1;
+    }
+    7.15% {
+      opacity: 0; /* Disappear */
+    }
+    100% {
+      opacity: 0; /* Remain hidden */
+    }
+  }
 }
 
-@media only screen and (max-width: 430px) {
+@media screen and (max-width: 430px) {
   .w-85,
   .w-55 {
     width: 100%;
+  }
+
+  .fs-1 {
+    font-size: 1.5rem !important;
   }
 
   .fs-sm-12 {
@@ -407,16 +830,69 @@ section {
   .CircularProgressbar {
     width: 50%;
   }
-}
 
-.circular-progress-capable .CircularProgressbar-path {
-  filter: drop-shadow(0 0 5px #ffcd0c);
-}
+  .skill {
+    width: 100%;
+  }
 
-.circular-progress-impressive .CircularProgressbar-path {
-  filter: drop-shadow(0 0 5px #00cbf8);
-}
+  .spread1 {
+    top: 800px;
+    left: 50px;
+  }
 
-.circular-progress-exceptional .CircularProgressbar-path {
-  filter: drop-shadow(0 0 5px #47dca5);
+  .spread2 {
+    top: 1900px;
+    left: -400px;
+  }
+
+  .spread3 {
+    top: 2700px;
+    left: 50px;
+  }
+
+  .spread4 {
+    top: 3500px;
+    left: -600px;
+  }
+
+  .spread5 {
+    top: 5500px;
+    left: 50px;
+  }
+
+  @keyframes flare-animation {
+    0% {
+      left: 0%;
+      opacity: 1;
+    }
+    7.14% {
+      /* 5 seconds of 70 seconds is approximately 7.14% */
+      left: 80%;
+      opacity: 1;
+    }
+    7.15% {
+      opacity: 0; /* Disappear */
+    }
+    100% {
+      opacity: 0; /* Remain hidden */
+    }
+  }
+
+  @keyframes flare-animation2 {
+    0% {
+      right: 0%;
+      opacity: 1;
+    }
+    7.14% {
+      /* 5 seconds of 70 seconds is approximately 7.14% */
+      right: 80%;
+      opacity: 1;
+    }
+    7.15% {
+      opacity: 0; /* Disappear */
+    }
+    100% {
+      opacity: 0; /* Remain hidden */
+    }
+  }
 }
