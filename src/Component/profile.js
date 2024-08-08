@@ -385,7 +385,7 @@ export default function Profile() {
               </div>
             </div>
 
-            {/* mobile view */}
+            {/* mobile view end*/}
           </div>
 
           <div
@@ -424,14 +424,23 @@ export default function Profile() {
             </div>
 
             <div className=" mb-5 mb-xxl-6">
-              <h2 className="greenish  m-0 ">Finding Smartest Alternative</h2>
+              <h2 className="greenish   mb-4 ">Finding Smartest Alternative</h2>
+
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </h5>
               <div className="d-flex flex-column-reverse flex-md-row align-items-center justify-content-lg-between gap-md-3 gap-lg-0 align-items-center">
                 <div className="d-md-flex pt-md-5 justify-content-between align-items-center w-85">
                   <div className="custom-loader-wrapper mb-4 mb-md-0">
                     <div className="circular-progress-capable">
                       <CircularProgressbar
                         value={item.softskills.smartestAlternative.capable}
-                        text="Capable"
+                        text={`${item.softskills.smartestAlternative.capable}%`}
                         strokeWidth={10}
                         styles={buildStyles({
                           textSize: "14px",
@@ -447,7 +456,7 @@ export default function Profile() {
                     <div className="circular-progress-impressive">
                       <CircularProgressbar
                         value={item.softskills.smartestAlternative.impressive}
-                        text="Impressive"
+                        text={`${item.softskills.smartestAlternative.impressive}%`}
                         strokeWidth={10}
                         styles={buildStyles({
                           textSize: "14px",
@@ -463,7 +472,7 @@ export default function Profile() {
                     <div className="circular-progress-exceptional">
                       <CircularProgressbar
                         value={item.softskills.smartestAlternative.exceptional}
-                        text="Exceptional"
+                        text={`${item.softskills.smartestAlternative.exceptional}%`}
                         strokeWidth={10}
                         styles={buildStyles({
                           textSize: "14px",
@@ -485,6 +494,15 @@ export default function Profile() {
 
             <div className="mb-5 mb-xxl-6">
               <h2 className="greenish  mb-4 ">Navigate lack of resources</h2>
+
+              <h5 className="mb-5 ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </h5>
               <div className="d-md-flex justify-content-lg-between gap-md-3 gap-lg-0 align-items-center ">
                 <div className="mb-4 mb-md-0 w-xxl-6">
                   <img src={solve} alt="solve" width="100%" />
@@ -494,7 +512,7 @@ export default function Profile() {
                     <div className="circular-progress-capable">
                       <CircularProgressbar
                         value={item.softskills.existingIdeas.capable}
-                        text="Capable"
+                        text={`${item.softskills.existingIdeas.capable}%`}
                         strokeWidth={10}
                         styles={buildStyles({
                           textSize: "14px",
@@ -511,7 +529,7 @@ export default function Profile() {
                     <div className="circular-progress-impressive">
                       <CircularProgressbar
                         value={item.softskills.existingIdeas.impressive}
-                        text="Impressive"
+                        text={`${item.softskills.existingIdeas.impressive}%`}
                         strokeWidth={10}
                         styles={buildStyles({
                           textSize: "14px",
@@ -527,7 +545,7 @@ export default function Profile() {
                     <div className="circular-progress-exceptional">
                       <CircularProgressbar
                         value={item.softskills.existingIdeas.exceptional}
-                        text="Exceptional"
+                        text={`${item.softskills.existingIdeas.exceptional}%`}
                         strokeWidth={10}
                         styles={buildStyles({
                           textSize: "14px",
