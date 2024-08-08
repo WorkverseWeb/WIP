@@ -29,7 +29,7 @@
   width: 500px;
   height: 500px;
   top: 700px;
-  left: 900px;
+  left: 1000px;
   filter: blur(80px);
 }
 
@@ -42,7 +42,7 @@
   width: 600px;
   height: 600px;
   top: 1100px;
-  left: -200px;
+  left: -400px;
   filter: blur(100px);
 }
 
@@ -55,7 +55,7 @@
   width: 600px;
   height: 600px;
   top: 1900px;
-  left: -200px;
+  left: 1000px;
   filter: blur(100px);
 }
 
@@ -68,7 +68,7 @@
   width: 800px;
   height: 800px;
   top: 2500px;
-  left: -250px;
+  left: -350px;
   filter: blur(100px);
 }
 
@@ -81,7 +81,7 @@
   width: 800px;
   height: 800px;
   top: 2200px;
-  left: 700px;
+  left: 1000px;
   filter: blur(100px);
 }
 
@@ -94,7 +94,7 @@
   width: 800px;
   height: 800px;
   top: 3500px;
-  left: 700px;
+  left: 1000px;
   filter: blur(100px);
 }
 
@@ -107,35 +107,10 @@
   width: 600px;
   height: 600px;
   top: 4100px;
-  left: -200px;
+  left: -400px;
   filter: blur(100px);
 }
 
-.spread8 {
-  background: radial-gradient(
-    circle,
-    rgba(1, 21, 3) 40%,
-    rgba(1, 21, 3, 0) 100%
-  );
-  width: 800px;
-  height: 800px;
-  top: 4500px;
-  left: 700px;
-  filter: blur(100px);
-}
-
-.spread9 {
-  background: radial-gradient(
-    circle,
-    rgba(1, 21, 3) 40%,
-    rgba(1, 21, 3, 0) 100%
-  );
-  width: 800px;
-  height: 800px;
-  top: 4800px;
-  left: -200px;
-  filter: blur(100px);
-}
 
 .App .Profile {
   position: relative;

@@ -8,11 +8,9 @@ function App() {
       <div className="color-spread spread2"></div>
       <div className="color-spread spread3"></div>
       <div className="color-spread spread4"></div>
-      <div className="color-spread spread5"></div>
+      {/* <div className="color-spread spread5"></div> */}
       <div className="color-spread spread6 d-lg-block  d-none "></div>
       <div className="color-spread spread7 d-lg-block  d-none "></div>
-      <div className="color-spread spread8 d-lg-block  d-none "></div>
-      <div className="color-spread spread9 d-lg-block d-none"></div>
       <div className="Profile">
         <Profile />
       </div>

@@ -12,7 +12,7 @@ import trainingicon4 from "./images/Vector (2).png";
 import traitsicon1 from "./images/Vector (4).png";
 import traitsicon2 from "./images/Vector (5).png";
 import traitsicon3 from "./images/Vector (6).png";
-import traitsicon4 from "./images/Vector (7).png";
+// import traitsicon4 from "./images/Vector.svg";
 import badgeicon1 from "./images/badge1.png";
 import badgeicon2 from "./images/badge2.png";
 import badgeicon4 from "./images/badge4.png";
@@ -30,13 +30,18 @@ export default function Profile() {
     ceoinmaking: badgeicon4,
   };
 
-  const traitsIcons = [traitsicon1, traitsicon2, traitsicon3, traitsicon4];
+  const traitsIcons = [traitsicon1, traitsicon2, traitsicon3];
+
+  const traitsHeading = [
+    " Strategic Thinker",
+    "Collaborative Problem-Solver",
+    " Process Improver",
+  ];
 
   const traitsText = [
-    "Frames logic",
-    "Communicates with clarity",
-    " Makes informed assumpt ion",
-    "Breaks down problem",
+    "Involves considering the long-term benefits of decisions and taking a holistic approach to problem-solving, ideal for individuals who excel in planning, analyzing, and executing strategies to achieve goals",
+    "Requires working effectively with others to find solutions, suited for individuals who value teamwork, communication, and mutual understanding, and are willing to adapt to different perspectives and approaches",
+    "Involves identifying areas for improvement and implementing changes to increase efficiency and effectiveness, ideal for individuals who are detail-oriented, analytical, and proactive in finding solutions to optimize processes and systemsInvolves identifying areas for improvement and implementing changes to increase efficiency and effectiveness, ideal for individuals who are detail-oriented, analytical, and proactive in finding solutions to optimize processes and systems",
   ];
 
   useEffect(() => {
@@ -149,11 +154,10 @@ export default function Profile() {
                   </div>
                   <div className="d-flex mx-lg-4">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.workplacetackled}
+                      {item.learningExperience.workplacetackled}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-md-2 mt-2 fs-18 lh-20">
-                      Engaged with {item.trainingStatistics.workplacetackled}{" "}
-                      problems requiring application of creative problem-solving
+                      {item.learningExperience.workplacetackledDesc}
                     </span>
                   </div>
                 </div>
@@ -173,11 +177,10 @@ export default function Profile() {
                   </div>
                   <div className="d-flex mx-lg-4 ">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.uniquemodels}
+                      {item.learningExperience.uniquemodels}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-md-2 mt-2 fs-18  lh-20">
-                      Learnt {item.trainingStatistics.uniquemodels} unique
-                      mental models for applying creative problem-solving
+                      {item.learningExperience.uniquemodelsDesc}
                     </span>
                   </div>
                 </div>
@@ -198,12 +201,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-2 max-w-100">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.personalities}
+                      {item.learningExperience.personalities}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20 word-break">
-                      Dealt with {item.trainingStatistics.personalities}
-                      different kind of people including company CEO, investors,
-                      government authorities, partners
+                      {item.learningExperience.personalitiesDesc}
                     </span>
                   </div>
                 </div>
@@ -217,11 +218,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-4">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.professionalemails}
+                      {item.learningExperience.professionalemails}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20">
-                      Engaged with {item.trainingStatistics.professionalemails}{" "}
-                      professional emails
+                      {item.learningExperience.professionalemailsDesc}
                     </span>
                   </div>
                 </div>
@@ -233,10 +233,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-4">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.kamaitoken}
+                      {item.learningExperience.kamaitoken}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20">
-                      Earned {item.trainingStatistics.kamaitoken} Kamai token
+                      {item.learningExperience.kamaitokenDesc}
                     </span>
                   </div>
                 </div>
@@ -248,11 +248,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-4">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.workplacesimulation}
+                      {item.learningExperience.workplacesimulation}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20">
-                      Spent {item.trainingStatistics.workplacesimulation} hours
-                      in Workplace Simulation
+                      {item.learningExperience.workplacesimulationDesc}
                     </span>
                   </div>
                 </div>
@@ -277,10 +276,10 @@ export default function Profile() {
                   </div>
                   <div className="d-flex mx-lg-4">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.workplacetackled}
+                      {item.learningExperience.workplacetackled}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-md-2 mt-2 fs-18 lh-20">
-                      Engaged with {item.trainingStatistics.workplacetackled}{" "}
+                      Engaged with {item.learningExperience.workplacetackled}{" "}
                       problems requiring application of creative problem-solving
                     </span>
                   </div>
@@ -301,11 +300,10 @@ export default function Profile() {
                   </div>
                   <div className="d-flex mx-lg-4 ">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.uniquemodels}
+                      {item.learningExperience.uniquemodels}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-md-2 mt-2 fs-18  lh-20">
-                      Learnt {item.trainingStatistics.uniquemodels} unique
-                      mental models for applying creative problem-solving
+                      {item.learningExperience.uniquemodelsDesc}
                     </span>
                   </div>
                 </div>
@@ -326,12 +324,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-2 max-w-100">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.personalities}
+                      {item.learningExperience.personalities}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20 word-break">
-                      Dealt with {item.trainingStatistics.personalities}
-                      different kind of people including company CEO, investors,
-                      government authorities, partners
+                      {item.learningExperience.personalitiesDesc}
                     </span>
                   </div>
                 </div>
@@ -343,11 +339,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-4 max-w-100">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.professionalemails}
+                      {item.learningExperience.professionalemails}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20 word-break">
-                      Engaged with {item.trainingStatistics.professionalemails}{" "}
-                      professional emails
+                      {item.learningExperience.professionalemailsDesc}
                     </span>
                   </div>
                 </div>
@@ -359,10 +354,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-4">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.kamaitoken}
+                      {item.learningExperience.kamaitoken}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20">
-                      Earned {item.trainingStatistics.kamaitoken} Kamai token
+                      {item.learningExperience.kamaitokenDesc}
                     </span>
                   </div>
                 </div>
@@ -374,11 +369,10 @@ export default function Profile() {
 
                   <div className="d-flex mx-lg-4 max-w-100">
                     <span className="green fs-1 fw-bold">
-                      {item.trainingStatistics.workplacesimulation}
+                      {item.learningExperience.workplacesimulation}
                     </span>
                     <span className="ms-2 ms-xxl-4 mt-xlg-1 mt-xxl-4 mt-lg-3 mt-2 fs-18 lh-20 word-break">
-                      Spent {item.trainingStatistics.workplacesimulation} hours
-                      in Workplace Simulation
+                      {item.learningExperience.workplacesimulationDesc}
                     </span>
                   </div>
                 </div>
@@ -396,29 +390,39 @@ export default function Profile() {
           >
             <div className="flare"></div>
           </div>
-          <div className="border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
+          <div className="border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 mb-4">
             <h2 className="text-uppercase fw-bold ls-8 mb-4 mb-xxl-6">
               Soft skills proficiency
             </h2>
 
             <div className="mb-5 mb-xxl-6">
-              <h2 className="greenish  mb-4 mb-xxl-5 ">
-                Creative Problem Solving
-              </h2>
+              <h2 className="greenish mb-xxl-5 ">Creative Problem Solving</h2>
 
-              <div className="custom-loader-wrapper mb-4 mb-md-0">
-                <div className="circular-progress-capable skill">
-                  <CircularProgressbar
-                    value={item.softskills.skills.creativeProblemSolving}
-                    text={`${item.softskills.skills.creativeProblemSolving}%`}
-                    strokeWidth={10}
-                    styles={buildStyles({
-                      textSize: "14px",
-                      pathColor: "#ffcd0c",
-                      textColor: "#ffcd0c",
-                      trailColor: "#2c2c2c",
-                    })}
-                  />
+              <div className="row">
+                <div className="col-12 col-md-6 d-flex align-items-center">
+                  <h5 className="mb-4 mb-md-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </h5>
+                </div>
+
+                <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
+                  <div className="custom-loader-wrapper">
+                    <div className="circular-progress-capable skill">
+                      <CircularProgressbar
+                        value={item.softskills.skills.creativeProblemSolving}
+                        text={`${item.softskills.skills.creativeProblemSolving}%`}
+                        strokeWidth={10}
+                        styles={buildStyles({
+                          textSize: "14px",
+                          pathColor: "#ffcd0c",
+                          textColor: "#ffcd0c",
+                          trailColor: "#2c2c2c",
+                        })}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -577,8 +581,93 @@ export default function Profile() {
                 <p className="m-0 fs-18">{item.softskills.exceptional}</p>
               </div>
             </div>
+          </div>
 
-            {/* <div className="mb-5">
+          <div className="mb-4 border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
+            <h2 className="text-uppercase fw-bold ls-8 mb-5 ">
+              Demonstrated Workplace Behaviors
+            </h2>
+
+            <div className="d-flex flex-column flex-md-row justify-content-between">
+              <div className="w-100 w-md-50 pe-2 mb-4 mb-md-0">
+                <h5>Attention to detail</h5>
+                <div
+                  className="progress mb-3"
+                  role="progressbar"
+                  aria-label="Attention to detail"
+                  aria-valuenow={item.workplaceBehaviors.attentiontodetail}
+                  aria-valuemin="0"
+                  aria-valuemax="10"
+                >
+                  <div
+                    className="progress-bar"
+                    style={{
+                      width: `${
+                        (item.workplaceBehaviors.attentiontodetail / 10) * 100
+                      }%`,
+                      backgroundColor: "#9cfc00",
+                      borderRadius: "15px",
+                    }}
+                  />
+                </div>
+                <div className="d-flex justify-content-end gap-4 align-items-center pe-7">
+                  <p className="text-end ">
+                    <strong>{item.workplaceBehaviors.attentiontodetail}</strong>
+                  </p>
+                  <p className="text-end ">
+                    {item.workplaceBehaviors.attentiontodetail <= 4
+                      ? "Occasional"
+                      : item.workplaceBehaviors.attentiontodetail <= 7
+                      ? "Frequent"
+                      : "Consistent"}
+                  </p>
+                </div>
+              </div>
+
+              <div className="w-100 w-md-50 ps-2  mb-4 mb-md-0">
+                <h5>Application of common sense</h5>
+                <div
+                  className="progress mb-3"
+                  role="progressbar"
+                  aria-label="Application of common sense"
+                  aria-valuenow={
+                    item.workplaceBehaviors.applicationofcommonsense
+                  }
+                  aria-valuemin="0"
+                  aria-valuemax="10"
+                >
+                  <div
+                    className="progress-bar"
+                    style={{
+                      width: `${
+                        (item.workplaceBehaviors.applicationofcommonsense /
+                          10) *
+                        100
+                      }%`,
+                      backgroundColor: "#9cfc00",
+                      borderRadius: "15px",
+                    }}
+                  />
+                </div>
+                <div className="d-flex justify-content-end gap-4 align-items-center pe-7">
+                  <p className="text-end">
+                    <strong>
+                      {item.workplaceBehaviors.applicationofcommonsense}
+                    </strong>
+                  </p>
+                  <p className="text-end  ">
+                    {item.workplaceBehaviors.applicationofcommonsense <= 4
+                      ? "Occasional"
+                      : item.workplaceBehaviors.applicationofcommonsense <= 7
+                      ? "Frequent"
+                      : "Consistent"}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* <div className="mb-5">
               <h2 className="greenish  m-lg-0 mb-3 ">
                 Innovating with existing ideas
               </h2>
@@ -641,43 +730,7 @@ export default function Profile() {
               </div>
             </div> */}
 
-            <div className=" mb-5 mb-xxl-6">
-              <div className="d-flex justify-content-between ">
-                <h4 className="text-uppercase fw-bold ls-8 ">job function</h4>
-
-                <p className="m-0 fw-bold fs-18">
-                  {item.jobFunction.filter(Boolean).length}/4
-                </p>
-              </div>
-              <div className="d-flex justify-content-between flex-wrap mt-5  px-lg-5">
-                {item.jobFunction.map((trait, idx) => (
-                  <div
-                    key={idx}
-                    className="col-lg-2 col-md-2 col-5 p-0 mt-4 mt-md-0 mb-md-3 mb-lg-0"
-                  >
-                    <div
-                      className={`border border-1 rounded-circle bg-green p-xxl-7 p-4 mx-lg-3 ${
-                        trait ? " shadow-green" : " shadow-light-green"
-                      }`}
-                    >
-                      <img
-                        src={traitsIcons[idx]}
-                        alt={`traitsicon${idx + 1}`}
-                        width={idx === 1 ? "115%" : "100%"}
-                      />
-                    </div>
-                    <p
-                      className={`mb-0 text-center mt-3 fs-18 lh-20 ${
-                        trait ? "text-white" : "text-secondary"
-                      }`}
-                    >
-                      {traitsText[idx]}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
+          <div className="mb-5 border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
             <h2 className="text-uppercase fw-bold ls-8 mb-4 ">analysis</h2>
 
             {item.analysis
@@ -744,27 +797,6 @@ export default function Profile() {
                   )}
                 </div>
               ))}
-
-            <div>
-              <h4 className="text-center fw-bold text-uppercase">
-                Achievable Badges
-              </h4>
-              <div className="d-md-flex justify-content-evenly align-items-center">
-                {Object.keys(item.badges).map(
-                  (badgeName, index) =>
-                    item.badges[badgeName] &&
-                    badgeIcons[badgeName] && ( // Ensure badge and badgeIcon exist
-                      <div key={index} className="px-5 px-md-0 w-xxl-7">
-                        <img
-                          src={badgeIcons[badgeName]}
-                          alt={badgeName}
-                          width="100%"
-                        />
-                      </div>
-                    )
-                )}
-              </div>
-            </div>
           </div>
           <div
             className="mb-3"
@@ -784,7 +816,7 @@ export default function Profile() {
           >
             <div className="flare"></div>
           </div>
-          <div className="border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
+          {/* <div className="border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
             <div className="d-flex justify-content-between ">
               <h4 className="text-uppercase fw-bold mb-xxl-5 ls-8 d-none d-md-block">
                 Unique workplace traits demonstrated
@@ -819,8 +851,54 @@ export default function Profile() {
                       trait ? "text-white" : "text-secondary"
                     }`}
                   >
-                    {traitsText[idx]}
+                    {traitsHeading[idx]}
                   </p>
+                </div>
+              ))}
+            </div>
+          </div> */}
+
+          <div className="border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
+            <div className="d-flex justify-content-between ">
+              <h4 className="text-uppercase fw-bold ls-8 ">job function</h4>
+
+              <p className="m-0 fw-bold fs-18">
+                {item.jobFunction.filter(Boolean).length}/3
+              </p>
+            </div>
+            <div className="mt-5 px-lg-5">
+              {item.jobFunction.map((trait, idx) => (
+                <div
+                  key={idx}
+                  className="d-flex flex-md-row flex-column justify-content-md-around gap-lg-5 align-items-center p-0 mt-5 mt-md-0 mb-md-5"
+                >
+                  <div
+                    className={`border border-1 rounded-circle w-jobfunction bg-green p-xxl-7 mb-3 mb-md-0 p-3 p-lg-5 mx-lg-5 ${
+                      trait ? "shadow-green" : "shadow-light-green"
+                    }`}
+                  >
+                    <img
+                      src={traitsIcons[idx]}
+                      alt={`traitsicon${idx + 1}`}
+                      style={{ width: idx === 1 ? "115%" : "100%" }}
+                    />
+                  </div>
+                  <div className="jobfunction-traitsheading">
+                    <h5
+                      className={` mb-3 lh-20 ${
+                        trait ? "text-white" : "text-secondary"
+                      }`}
+                    >
+                      {traitsHeading[idx]}
+                    </h5>
+                    <p
+                      className={`mb-0  fs-18 lh-20 ${
+                        trait ? "text-white" : "text-secondary"
+                      }`}
+                    >
+                      {traitsText[idx]}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -832,6 +910,27 @@ export default function Profile() {
             }}
           >
             <div className="flare2"></div>
+          </div>
+
+          <div className="mt-3 border border-1 border-secondary rounded p-xxl-6 p-lg-5 p-md-4 p-3 ">
+            <h4 className="text-center fw-bold text-uppercase">
+              Achievable Badges
+            </h4>
+            <div className="d-md-flex justify-content-evenly align-items-center">
+              {Object.keys(item.badges).map(
+                (badgeName, index) =>
+                  item.badges[badgeName] &&
+                  badgeIcons[badgeName] && ( // Ensure badge and badgeIcon exist
+                    <div key={index} className="px-5 px-md-0 w-xxl-7">
+                      <img
+                        src={badgeIcons[badgeName]}
+                        alt={badgeName}
+                        width="100%"
+                      />
+                    </div>
+                  )
+              )}
+            </div>
           </div>
 
           <div className="d-flex justify-content-between align-items-center px-lg-4 px-3 mt-3">

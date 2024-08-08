@@ -4,11 +4,20 @@ section {
 }
 
 .fs-18 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .max-w-100 {
   max-width: 100%;
+}
+
+.pe-7 {
+  padding-right: 100px;
+}
+
+.progress {
+  width: 80%;
+  height: 5px;
 }
 
 .word-break {
@@ -38,6 +47,10 @@ section {
   letter-spacing: 8px;
 }
 
+h5 {
+  font-size: 1.2rem;
+}
+
 .lh-20 {
   line-height: 22px;
 }
@@ -64,6 +77,10 @@ section {
 
 .w-55 {
   width: 53%;
+}
+
+.jobfunction-traitsheading {
+  max-width: 700px;
 }
 
 .divider {
@@ -333,7 +350,7 @@ section {
 }
 
 .skill {
-  width: 18%;
+  width: 70%;
 }
 
 .skill .CircularProgressbar-path {
@@ -402,12 +419,16 @@ section {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   h4,
   h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
+  }
+
+  h5 {
+    font-size: 4rem;
   }
 
   .lh-20 {
@@ -526,12 +547,16 @@ section {
   }
 
   h1 {
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
 
   h4,
   h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
+  }
+
+  h5 {
+    font-size: 4rem;
   }
 
   .lh-20 {
@@ -610,6 +635,9 @@ section {
   h2 {
     font-size: 4rem;
   }
+  h5 {
+    font-size: 3.5rem;
+  }
   .lh-20 {
     line-height: 50px;
   }
@@ -643,6 +671,13 @@ section {
 }
 
 @media (769px <= width <= 1200px) {
+  h5 {
+    font-size: 1.2rem;
+  }
+  .jobfunction-traitsheading {
+    max-width: 500px;
+  }
+
   .mt-xlg-1 {
     margin-top: 0.5rem !important;
   }
@@ -670,11 +705,34 @@ section {
     font-size: 2rem !important;
   }
   .skill {
-    width: 22%;
+    width: 60%;
+  }
+  .pe-7 {
+    padding-right: 80px;
   }
 }
 
 @media screen and (min-width: 430px) and (max-width: 768px) {
+  .pe-7 {
+    padding-right: 65px;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+  .skill {
+    width: 60%;
+  }
+
+  .jobfunction-traitsheading {
+    max-width: 400px;
+  }
+
+  /* .w-jobfunction {
+    width: 50%;
+  } */
+
   .w-md-50 {
     width: 50%;
   }
@@ -712,10 +770,6 @@ section {
 
   .custom-loader h6 {
     padding: 40px 10px;
-  }
-
-  .skill {
-    width: 22%;
   }
 
   .fs-1 {
@@ -785,6 +839,14 @@ section {
 }
 
 @media screen and (max-width: 430px) {
+  .pe-7 {
+    padding-right: 40px;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
   .w-85,
   .w-55 {
     width: 100%;
@@ -798,7 +860,7 @@ section {
     font-size: 12px;
   }
   .ls-8 {
-    letter-spacing: 5px;
+    letter-spacing: 2px;
   }
   .fs-18 {
     font-size: 16px;
