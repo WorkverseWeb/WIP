@@ -7,12 +7,24 @@ section {
   font-size: 20px;
 }
 
+.max-w-85 {
+  max-width: 85%;
+}
+
 .max-w-100 {
   max-width: 100%;
 }
 
+.bg-gradient {
+  background: linear-gradient(
+    225deg,
+    rgb(64 60 60 / 30%) 30%,
+    rgb(32 24 24 / 80%) 80%
+  );
+}
+
 .pe-7 {
-  padding-right: 100px;
+  padding-right: 110px;
 }
 
 .progress {
@@ -324,7 +336,7 @@ h5 {
 
 .neuroda {
   position: absolute;
-  width: 21%;
+  width: 20%;
   right: 75px;
   z-index: 2;
 }
@@ -338,7 +350,7 @@ h5 {
 
 .neuroda1 {
   position: absolute;
-  width: 21%;
+  width: 19%;
   transform: scale(-1, 1);
   z-index: 2;
 }
