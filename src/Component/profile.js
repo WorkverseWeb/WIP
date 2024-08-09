@@ -47,8 +47,8 @@ export default function Profile() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await axios.get("https://app.xbsl.app/api/user/wip");
-        const response = await axios.get("http://localhost:8080/api/user/wip");
+        const response = await axios.get("https://app.xbsl.app/api/user/wip");
+        // const response = await axios.get("http://localhost:8080/api/user/wip");
         setWipData(response.data);
         // console.log("testing", response.data);
       } catch (error) {
